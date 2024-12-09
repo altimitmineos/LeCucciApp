@@ -1,0 +1,483 @@
+body {
+    font-family: Century Gothic;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align logo to the left */
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    position: fixed;
+    top: 0; /* Position it at the top of the page */
+    left: 0; /* Ensure it spans the full width of the screen */
+    width: 100%; /* Full width of the page */
+    z-index: 1000; /* Ensure it's above other content */
+    box-shadow: 0 4px 2px -2px gray; /* Optional: adds a shadow for better visibility */
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    max-width: 100%; /* Make the logo responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+nav{
+    padding-right: 50px;
+}
+
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the links */
+    width: 100%;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 15px 25px;
+    text-align: center;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #F4FAF4;
+}
+
+.home {
+    font-weight: bold;
+}
+
+.home:hover {
+    background: white;
+}
+
+/* Placeholder Section Styling */
+.placeholder-lecucci {
+    background-color: #074E08;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 175px;
+}
+
+.lecucimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 125px;
+    width: 100%;
+    flex-wrap: wrap; /* Allow images to wrap on small screens */
+}
+
+.lecucimg img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.intro-text {
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 2rem; /* Default font size for larger screens */
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 4rem;
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center items */
+    padding: 150px;
+    gap: 60px;
+    flex-wrap: wrap; /* Allow content to wrap on small screens */
+}
+
+.content-left {
+    flex: 1;
+    max-width: 40%; /* Restrict image width */
+}
+
+.content-left img {
+    width: 100%; /* Make image responsive */
+    height: auto;
+}
+
+.content-right {
+    flex: 1;
+    max-width: 100%; /* Allow text to take more space */
+}
+
+.content-right p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribute images evenly */
+    gap: 20px; /* Space between the images */
+    padding-left: 100px;
+    padding-bottom: 10px;
+    padding-right: 100px;
+}
+
+.image-box {
+    width: 30%; /* Each image will take 30% of the container width */
+    height: auto; /* Maintain the aspect ratio */
+    background-color: #ccc; /* Background color for visualization */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box img {
+    width: 100%; /* Make the image take up the full width of the box */
+    height: auto; /* Keep the aspect ratio intact */
+}
+
+/* Footer Base Styling */
+footer {
+    background-color: #485048; /* Dark gray background */
+    color: white; /* White text */
+    font-size: 14px;
+    width: 100%;
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Spread links and contact/social */
+    align-items: flex-start; /* Align items at the top */
+    padding: 20px;
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+/* Footer Links */
+.footer-links {
+    flex: 1; /* Take up space */
+    color: white;
+    font-size: 14px;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer-links a {
+    color: white; /* White links */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer Contact and Social Media */
+.footer-contact-social {
+    flex: 1; /* Take up space */
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contact {
+    width: 100%;
+    height: 70px;
+}
+
+.text-contact{
+    float: right;
+    width: 500px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.footer-social {
+    width: 100%;
+    height: 60px;
+}
+
+.social-items{
+    float: right;
+    width: 500px;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 5px;
+}
+
+.social-icons .social-icon {
+    font-size: 18px; /* Icon size */
+    margin: 0 3px; /* Spacing between icons */
+    color: white;
+    text-decoration: none; /* No underline */
+}
+
+.social-icons .social-icon:hover {
+    opacity: 0.8; /* Transparency effect on hover */
+}
+
+/* Footer Copyright */
+.footer-copyright {
+    text-align: center; /* Center-align text */
+    font-size: 12px; /* Smaller font size */
+    color: #a2a4a2; /* Light gray */
+    background-color: #30342c; /* Darker background */
+    padding: 10px 0; /* Add padding */
+    margin-top: 10px;
+}
+
+/* Mobile View: for screens less than 787px */
+@media screen and (max-width: 787px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between; /* Align logo and hamburger */
+    }
+
+    nav ul {
+        display: none; /* Hide the nav links initially */
+        flex-direction: column; /* Stack links vertically */
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-top: 8px;
+        z-index: 1;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        border-top: 0.1px solid #a2a4a2;
+    }
+
+    nav ul li .contact_us{
+        box-shadow: 0px 15px 20px -15px black;
+    }
+    /* 0px 10px 40px -2px */
+
+    nav ul li .home {
+        border-left: 3px solid black;
+
+        font-weight: normal;
+    }
+
+    .menu-toggle:checked + label + nav ul {
+        display: flex; /* Display the menu */
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 25px;
+        color: black;
+        position: fixed;
+        top: 11px;
+        right: 20px;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .intro-text {
+        font-size: 1rem; /* Smaller font size for mobile screens */
+        padding-bottom: 1.5rem;
+    }
+
+    .lecucimg img {
+        width: 70%; /* Scale down image for mobile */
+        height: auto;
+    }
+
+    .lecucimg {
+        padding-bottom: 4rem;
+    }
+
+    .placeholder-lecucci {
+        padding-top: 96px; /* Adjust padding for smaller screens */
+        padding-bottom: 2rem;
+    }
+    .content-section {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 60px;
+        gap: 20px;
+    }
+
+    .content-left {
+        max-width: 100%; /* Allow image to take full width */
+        margin-bottom: 20px; /* Add spacing below image */
+    }
+
+
+    .content-right {
+        max-width: 100%; /* Allow text to take full width */
+    }
+
+    .content-right p {
+        font-size: 1rem; /* Adjust font size for mobile */
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .container {
+        flex-direction: column; /* Stack the images vertically on smaller screens */
+        align-items: center; /* Center the items */
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 0px;
+    }
+
+    .image-box {
+        width: 100%; /* Each image will take 80% of the container width on smaller screens */
+        margin-bottom: 20px; /* Add space between stacked images */
+
+    }
+
+    .footer-links {
+        text-align: center;
+        flex: 1; /* Take up space */
+        color: white;
+        font-size: 14px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+
+    .footer-contact {
+        width: 100%;
+        height: 70px;
+    }
+
+    .text-contact{
+        float:none;
+        width: auto;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .footer-social {
+        width: 100%;
+        height: 60px;
+    }
+
+    .social-items{
+        float:none;
+        width: auto;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 469px) {
+    .footer-links {
+        text-align: center;
+        flex: 1; /* Take up space */
+        color: white;
+        font-size: 13px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    .lecucimg{
+        padding-bottom: 2rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .footer-links {
+        text-align: center;
+        flex: 1; /* Take up space */
+        color: white;
+        font-size: 10px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media  screen and (max-width: 1003px) {
+    .content-section {
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .container {
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 0px;
+    }
+
+    .content-right p {
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+}
+
+
+/* Desktop View: for screens wider than 787px */
+@media screen and (min-width: 787px) {
+    header {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none; /* Hide hamburger on desktop */
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .intro-text {
+        font-size: 1.5rem; /* Font size for larger screens */
+    }
+
+}
+
+/* Additional Tweaks for Larger Screens */
+@media screen and (min-width: 1024px) {
+    .intro-text {
+        font-size: 1.5rem; /* Font size for extra large screens */
+    }
+}

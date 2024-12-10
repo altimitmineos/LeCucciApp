@@ -25,6 +25,14 @@
             </ul>
         </nav>
     </header>
+    <div class="placeholder-gallery">
+        <div class="gallery-text">
+            <h1>GALLERY</h1>
+        </div>
+        <div class="intro-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+    </div>
     <footer>
         <div class="footer-links">
             <a href="#contact">Contact Us </a>|

@@ -59,7 +59,7 @@ nav ul li a:hover {
     background: #F4FAF4;
 }
 
-.gallery{
+.our_service{
     font-weight: bold;
 }
 
@@ -160,7 +160,7 @@ footer {
 }
 
 .placeholder-gallery {
-    background-color: #EDC869;
+    background-color: #9D6A89;
     padding-top: 175px;
     padding-bottom: 80px;
 }
@@ -174,97 +174,16 @@ footer {
     font-size: 25px;
     padding-left: 250px;
     padding-right: 250px;
+    color: white;
 }
-
 .gallery-text h1{
     font-weight: normal;
-    font-size: 100px;
+    font-size: 95px;
     margin-bottom: 40px;
     margin-top: 0px;
+    color: white;
 }
 
-.container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* Align logo and hamburger */
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    gap: 30px;
-}
-
-.container-b-a{
-    display: flex;
-    flex-direction: row;
-}
-
-.line{
-    width: 2px;               /* Thickness of the line */
-    background-color: black;   /* Color of the line */
-    height: 250px;
-    margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.container-before{
-    text-align: center;
-}
-.container-after{
-    text-align: center;
-}
-.container-before p{
-    text-align: center;
-    font-family: 'Inter';
-}
-.container-after p{
-    text-align: center;
-    font-family: 'Inter';
-}
-
-.container-before img{
-    width: 250px;
-
-}
-.container-after img{
-    width: 250px;
-}
-@media  screen and (max-width: 1190px) {
-    .container-before img{
-        width: 200px;
-
-    }
-    .container-after img{
-        width: 200px;
-    }
-    .line{
-        height: 200px;
-    }
-}
-
-@media  screen and (max-width: 1001px) {
-    .container-before img{
-        width: 150px;
-
-    }
-    .container-after img{
-        width: 150px;
-    }
-    .line{
-        height: 150px;
-    }
-}
-
-@media  screen and (max-width: 976px) {
-    .intro-text{
-        padding-left: 200px;
-        padding-right: 200px;
-    }
-    .placeholder-gallery {
-        padding-top: 125px;
-        padding-bottom: 50px;
-    }
-}
 
 
 @media screen and (max-width: 787px) {
@@ -298,7 +217,7 @@ footer {
         box-shadow: 0px 15px 20px -15px black;
     }
 
-    nav ul li .gallery {
+    nav ul li .our_service {
         border-left: 3px solid black;
 
         font-weight: normal;
@@ -342,7 +261,7 @@ footer {
         padding-bottom: 30px;
     }
     .gallery-text h1{
-        font-size: 80px;
+        font-size: 75px;
         margin-bottom: 30px;
     }
     .footer-links {
@@ -379,11 +298,6 @@ footer {
         width: auto;
         text-align: center;
     }
-    .container{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 @media screen and (max-width: 583px) {
@@ -403,7 +317,7 @@ footer {
         font-size: 20px;
     }
     .gallery-text h1{
-        font-size: 60px;
+        font-size: 55px;
         margin-bottom: 30px;
     }
 }
@@ -434,7 +348,7 @@ footer {
         padding-bottom: 20px;
     }
     .gallery-text h1{
-        font-size: 50px;
+        font-size: 45px;
         margin-bottom: 20px;
     }
 

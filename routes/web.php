@@ -13,3 +13,8 @@ Route::get('/about-us', function () {
 Route::get('/gallery', function () {
     return view('Gallery');
 })->name('gallery');
+
+Route::get('/our-services', function () {
+    return view('OurService');
+})->name('OurServices');
+

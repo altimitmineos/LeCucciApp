@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Cucci Website</title>
     <link rel="stylesheet" href="{{ asset('css/stylesgallery.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                 <li><a href="{{ route('home') }}" class="home">Home</a></li>
                 <li><a href="{{ route('about_us') }}" class="about_us">About Us</a></li>
                 <li><a href="{{ route('gallery') }}" class="gallery">Gallery</a></li>
-                <li><a href="#" class="our_service">Our Service</a></li>
+                <li><a href="{{ route('OurServices') }}" class="our_service">Our Service</a></li>
                 <li><a href="#" class="contact_us">Contact Us</a></li>
             </ul>
         </nav>
@@ -31,6 +32,78 @@
         </div>
         <div class="intro-text">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-left">
+            <div class="container-b-a">
+                <div class="container-before">
+                    <p>BEFORE</p>
+                    <img src="{{ asset('images/placeholder.png') }}" alt="Pak'e">
+                </div>
+                <div class="line"></div>
+                <div class="container-after">
+                    <p>AFTER</p>
+                    <img src="{{ asset('images/placeholder.png') }}" alt="Pak'e">
+                </div>
+            </div>
+            <div class="container-b-a">
+                <div class="container-before">
+                    <p>BEFORE</p>
+                    <img src="{{ asset('images/placeholder.png') }}" alt="Pak'e">
+                </div>
+                <div class="line"></div>
+                <div class="container-after">
+                    <p>AFTER</p>
+                    <img src="{{ asset('images/placeholder.png') }}" alt="Pak'e">
+                </div>
+            </div>
+            <div class="container-b-a">
+                <div class="container-before">
+                    <p>BEFORE</p>
+                    <img src="{{ asset('images/placeholder.png') }}" alt="Pak'e">
+                </div>
+                <div class="line"></div>
+                <div class="container-after">
+                    <p>AFTER</p>
+                    <img src="{{ asset('images/placeholder.png') }}" alt="Pak'e">
+                </div>
+            </div>
+        </div>
+        <div class="container-right">
+            <div class="container-b-a">
+                <div class="container-before">
+                    <p>BEFORE</p>
+                    <img src="{{ asset('images/placeholder.png') }}" alt="Pak'e">
+                </div>
+                <div class="line"></div>
+                <div class="container-after">
+                    <p>AFTER</p>
+                    <img src="{{ asset('images/placeholder.png') }}" alt="Pak'e">
+                </div>
+            </div>
+            <div class="container-b-a">
+                <div class="container-before">
+                    <p>BEFORE</p>
+                    <img src="{{ asset('images/placeholder.png') }}" alt="Pak'e">
+                </div>
+                <div class="line"></div>
+                <div class="container-after">
+                    <p>AFTER</p>
+                    <img src="{{ asset('images/placeholder.png') }}" alt="Pak'e">
+                </div>
+            </div>
+            <div class="container-b-a">
+                <div class="container-before">
+                    <p>BEFORE</p>
+                    <img src="{{ asset('images/placeholder.png') }}" alt="Pak'e">
+                </div>
+                <div class="line"></div>
+                <div class="container-after">
+                    <p>AFTER</p>
+                    <img src="{{ asset('images/placeholder.png') }}" alt="Pak'e">
+                </div>
+            </div>
         </div>
     </div>
     <footer>

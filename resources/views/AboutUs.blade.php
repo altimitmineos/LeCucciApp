@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Cucci Website</title>
     <link rel="stylesheet" href="{{ asset('css/stylesabt.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
@@ -34,8 +35,7 @@
         </div>
         <div class="content-right">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Le Cucci adalah layanan Laundry & Dry Clean yang berdedikasi untuk memberikan perawatan terbaik bagi pakaian Anda, dengan fokus pada kualitas, ketelitian, dan inovasi. Kami percaya bahwa setiap pakaian memiliki nilai lebih, dan tugas kami adalah menjaga agar pakaian Anda memiliki usia pakai yang lebih panjang, tetap terawat, dan terlihat seperti baru.
             </p>
         </div>
     </section>
@@ -46,7 +46,7 @@
             </div>
             <div class="what-text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                <a href="#" class="read_more">>>Read More</a></li>
+                <a href="{{ route('ReadMore') }}" class="read_more">>>Read More</a></li>
             </div>
         </div>
         <div class="container-right-what">
@@ -94,9 +94,15 @@
             <div class="social-items">
                 <span>ON SOCIAL MEDIA</span>
                 <div class="social-icons">
-                <a href="#facebook" class="social-icon">🔵</a>
-                <a href="#instagram" class="social-icon">🟣</a>
-                <a href="#whatsapp" class="social-icon">🟢</a>
+                    <a href="#facebook" class="social-icon">
+                        <i class="bi bi-facebook fs-5"></i>
+                    </a>
+                    <a href="#instagram" class="social-icon">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#whatsapp" class="social-icon">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
                 </div>
             </div>
           </div>

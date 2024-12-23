@@ -246,6 +246,24 @@ footer {
     margin-top: 10px;
 }
 
+@media  screen and (max-width: 1003px) {
+    .content-section {
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .container {
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 0px;
+    }
+
+    .content-right p {
+        font-size: 1rem; /* Adjust font size for mobile */
+        line-height: 20px;
+    }
+}
+
 /* Mobile View: for screens less than 787px */
 @media screen and (max-width: 787px) {
     header {
@@ -311,16 +329,16 @@ footer {
 
     .intro-text {
         font-size: 1rem; /* Smaller font size for mobile screens */
-        padding-bottom: 1.5rem;
+        padding-bottom: 10px;
+    }
+
+    .intro-text p{
+        text-align: justify;
     }
 
     .lecucimg img {
         width: 70%; /* Scale down image for mobile */
         height: auto;
-    }
-
-    .lecucimg {
-        padding-bottom: 4rem;
     }
 
     .placeholder-lecucci {
@@ -333,7 +351,7 @@ footer {
         padding-left: 60px;
         padding-right: 60px;
         padding-bottom: 60px;
-        gap: 20px;
+        gap: 0px;
     }
 
     .content-left {
@@ -357,6 +375,14 @@ footer {
         align-items: center; /* Center the items */
         padding-left: 60px;
         padding-right: 60px;
+        padding-bottom: 0px;
+    }
+
+    .lecucimg {
+        padding-bottom: 20px;
+    }
+
+    .placeholder-lecucci{
         padding-bottom: 0px;
     }
 
@@ -415,8 +441,18 @@ footer {
         padding-bottom: 20px;
     }
 
+    .content-left{
+        margin: 0px;
+    }
+
+    .content-section{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 40px;
+    }
+
     .lecucimg{
-        padding-bottom: 2rem;
+        padding-bottom: 10px;
     }
 }
 @media screen and (max-width: 400px) {
@@ -429,23 +465,6 @@ footer {
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 20px;
-    }
-}
-
-@media  screen and (max-width: 1003px) {
-    .content-section {
-        padding: 30px;
-        gap: 20px;
-    }
-
-    .container {
-        padding-left: 60px;
-        padding-right: 60px;
-        padding-bottom: 0px;
-    }
-
-    .content-right p {
-        font-size: 1rem; /* Adjust font size for mobile */
     }
 }
 

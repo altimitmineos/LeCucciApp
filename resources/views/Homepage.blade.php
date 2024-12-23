@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Cucci Website</title>
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
@@ -30,10 +31,7 @@
             <img src="{{ asset('images/Logo.png') }}" alt="Logo">
         </div>
         <div class="intro-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.</p>
+            <p>Le Cucci menyediakan layanan Laundry & Dry Clean dengan teknologi terkini, bahan pembersih berkualitas, dan tenaga ahli yang memastikan pakaian Anda terjaga kebersihannya dan tetap awet. </p>
         </div>
     </div>
     <section class="content-section">
@@ -42,8 +40,10 @@
         </div>
         <div class="content-right">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Le Cucci adalah layanan Laundry & Dry Clean terpercaya yang tentunya menggunakan teknologi modern, formula pembersih premium, dan tenaga profesional berpengalaman untuk merawat semua jenis pakaian Anda.
+                <br>
+                <br>
+                Kami memastikan setiap pakaian dibersihkan dengan teliti, aman, dan ramah lingkungan, sehingga tetap terjaga kualitasnya. Le Cucci berkomitmen untuk menjadi mitra terbaik Anda dalam menjaga kebersihan dan keindahan pakaian.
             </p>
         </div>
     </section>
@@ -64,8 +64,7 @@
         </div>
         <div class="content-right">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Le Cucci sudah menjadi pilihan utama para profesional dan merek pakaian terkemuka, baik lokal maupun internasional. Dengan standar kualitas yang tinggi dan hasil yang konsisten, kami telah membangun kepercayaan dari klien-klien terbaik, termasuk merek pakaian terkenal yang mempercayakan perawatan produk mereka kepada kami.
             </p>
         </div>
     </section>
@@ -86,9 +85,15 @@
             <div class="social-items">
                 <span>ON SOCIAL MEDIA</span>
                 <div class="social-icons">
-                <a href="#facebook" class="social-icon">🔵</a>
-                <a href="#instagram" class="social-icon">🟣</a>
-                <a href="#whatsapp" class="social-icon">🟢</a>
+                <a href="#facebook" class="social-icon">
+                    <i class="bi bi-facebook fs-5"></i>
+                </a>
+                <a href="#instagram" class="social-icon">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#whatsapp" class="social-icon">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
                 </div>
             </div>
           </div>

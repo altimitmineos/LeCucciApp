@@ -18,3 +18,8 @@ Route::get('/our-services', function () {
     return view('OurService');
 })->name('OurServices');
 
+
+Route::get('/read-more', function () {
+    return view('ReadMore');
+})->name('ReadMore');
+

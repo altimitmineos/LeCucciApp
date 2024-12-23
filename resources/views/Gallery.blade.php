@@ -7,6 +7,7 @@
     <title>Le Cucci Website</title>
     <link rel="stylesheet" href="{{ asset('css/stylesgallery.css') }}">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
@@ -31,7 +32,7 @@
             <h1>GALLERY</h1>
         </div>
         <div class="intro-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p>Le Cucci membuktikan perbedaan nyata sebelum dan sesudah perawatan pakaian di Le Cucci. Dengan teknologi modern, formula pembersih premium, dan tenaga profesional, kami memastikan perawatan warna, desain, aksesoris, dan bahan pakaian Anda agar tetap terjaga kualitasnya. </p>
         </div>
     </div>
     <div class="container">
@@ -123,9 +124,15 @@
             <div class="social-items">
                 <span>ON SOCIAL MEDIA</span>
                 <div class="social-icons">
-                <a href="#facebook" class="social-icon">🔵</a>
-                <a href="#instagram" class="social-icon">🟣</a>
-                <a href="#whatsapp" class="social-icon">🟢</a>
+                    <a href="#facebook" class="social-icon">
+                        <i class="bi bi-facebook fs-5"></i>
+                    </a>
+                    <a href="#instagram" class="social-icon">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#whatsapp" class="social-icon">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
                 </div>
             </div>
           </div>

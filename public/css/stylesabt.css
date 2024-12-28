@@ -115,6 +115,9 @@ nav ul li a:hover {
     font-weight: normal;
     font-size: 70px;
 }
+#carouselExampleIndicators{
+    display: none;
+}
 
 .what-text{
     color: white;
@@ -288,10 +291,13 @@ footer {
     margin-top: 10px;
 }
 
-@media  screen and (max-width: 1245px) {
+@media  screen and (max-width: 1246px) {
     .container-what{
         padding-left: 100px;
         padding-right: 100px;
+    }
+    .container-left-what{
+        max-width: 54%;
     }
 }
 
@@ -304,6 +310,9 @@ footer {
         gap: 80px;
     }
 
+    .container-what{
+        display: none;
+    }
 
     .content-left img {
         width: 100%; /* Make image responsive */
@@ -329,11 +338,22 @@ footer {
         height: auto;
     }
 
-    .image-3{
-        display: none;
+    #carouselExampleIndicators{
+        display: block;
     }
-    .image-4{
-        display: none;
+
+    .carousel-inner {
+        padding-top: 30px;
+        padding-left: 235px;
+        padding-right: 235px;
+        padding-bottom: 30px;
+    }
+
+    .carousel-control-next{
+        right: 196px;
+    }
+    .carousel-control-prev{
+        left: 196px;
     }
 }
 
@@ -530,6 +550,22 @@ footer {
         font-size: 40px;
     }
 
+    .carousel-inner {
+        padding: 25px 150px; /* Larger padding for tablets */
+    }
+
+    .carousel-control-next {
+        right: 120px; /* Move arrows outward */
+    }
+
+    .carousel-control-prev {
+        left: 120px;
+    }
+
+    .carousel-indicators{
+        margin-bottom: 30px;
+    }
+
     .container-what{
         padding-top: 20px;
         padding-bottom: 30px;
@@ -559,6 +595,30 @@ footer {
     }
     .header-text{
         margin-top: 100px;
+    }
+
+    .carousel-inner {
+        padding: 20px 80px; /* Larger padding for small phones */
+    }
+
+    .carousel-control-next {
+        right: 60px; /* Adjust arrows */
+    }
+
+    .carousel-control-prev {
+        left: 60px;
+    }
+
+    .carousel-inner {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .carousel-control-next{
+        right: 26px;
+    }
+    .carousel-control-prev{
+        left: 26px;
     }
     .header-text h1{
         font-size: 40px;

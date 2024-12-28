@@ -10,7 +10,7 @@ header {
     justify-content: flex-start; /* Align logo to the left */
     padding-left: 20px;
     padding-top: 15px;
-    padding-bottom: 12px;
+    padding-bottom: 15px;
     background-color: white;
     position: fixed;
     top: 0; /* Position it at the top of the page */
@@ -30,7 +30,7 @@ header {
 }
 
 nav{
-    padding-right: 10px;
+    padding-right: 50px;
 }
 
 
@@ -59,7 +59,7 @@ nav ul li a:hover {
     background: #F4FAF4;
 }
 
-.home {
+.contact_us{
     font-weight: bold;
 }
 
@@ -67,109 +67,6 @@ nav ul li a:hover {
     background: white;
 }
 
-/* Placeholder Section Styling */
-.placeholder-lecucci {
-    background-image: url(header.png);
-    background-size: cover;                /* Scale the image to cover the entire element */
-    background-position: center;           /* Center the image */
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 75px;
-    padding-top: 150px;
-}
-
-.carousel-inner {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-
-.lecucimg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 125px;
-    width: 100%;
-    flex-wrap: wrap; /* Allow images to wrap on small screens */
-}
-
-.lecucimg img {
-    max-width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.intro-text {
-    color: white;
-    text-align: center;
-    line-height: 30px;
-    font-size: 2rem; /* Default font size for larger screens */
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 4rem;
-}
-
-.content-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Vertically center items */
-    padding: 150px;
-    gap: 60px;
-    flex-wrap: wrap; /* Allow content to wrap on small screens */
-}
-
-.content-left {
-    flex: 1;
-    max-width: 40%; /* Restrict image width */
-}
-
-.content-left img {
-    width: 100%; /* Make image responsive */
-    height: auto;
-}
-
-.content-right {
-    flex: 1;
-    max-width: 100%; /* Allow text to take more space */
-}
-
-.content-right p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #333;
-}
-
-#carouselExampleIndicators{
-    display: none;
-}
-
-
-.container {
-    display: flex;
-    justify-content: space-between; /* Distribute images evenly */
-    gap: 20px; /* Space between the images */
-    padding-left: 100px;
-    padding-bottom: 10px;
-    padding-right: 100px;
-}
-
-.image-box {
-    width: 30%; /* Each image will take 30% of the container width */
-    height: auto; /* Maintain the aspect ratio */
-    background-color: #ccc; /* Background color for visualization */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-box img {
-    width: 100%; /* Make the image take up the full width of the box */
-    height: auto; /* Keep the aspect ratio intact */
-}
-
-/* Footer Base Styling */
 footer {
     background-color: #485048; /* Dark gray background */
     color: white; /* White text */
@@ -261,25 +158,174 @@ footer {
     margin-top: 10px;
 }
 
-@media  screen and (max-width: 1003px) {
-    .content-section {
-        padding: 30px;
-        gap: 20px;
-    }
-
-    .container {
-        padding-left: 60px;
-        padding-right: 60px;
-        padding-bottom: 0px;
-    }
-
-    .content-right p {
-        font-size: 1rem; /* Adjust font size for mobile */
-        line-height: 20px;
-    }
+.placeholder-gallery {
+    background-color: #576057;;
+    padding-top: 175px;
+    padding-bottom: 80px;
 }
 
-/* Mobile View: for screens less than 787px */
+.gallery-text{
+    text-align: center;
+}
+
+.intro-text{
+    text-align: left;
+    font-size: 25px;
+    padding-left: 250px;
+    padding-right: 250px;
+    color: white;
+}
+
+.contact-info {
+    color: white; /* Text color */
+    padding-left: 250px; /* Add some padding for spacing */
+    padding-right: 250px;
+    font-size: 25px; /* Adjust the font size */
+}
+
+.info-row {
+    display: flex; /* Arrange the label and value in a single row */
+    margin-bottom: 10px; /* Add spacing between rows */
+}
+
+.label {
+    flex: 0 0 250px; /* Fixed width for the labels */
+}
+
+.value {
+    flex: 1; /* Allow the value to take up the remaining space */
+    word-wrap: normal; /* Ensure long text wraps to the next line */
+}
+
+.contact-heading {
+    font-size: 20px; /* Smaller heading font */
+    margin-bottom: 20px; /* Add spacing below the heading */
+    text-align: center; /* Center-align the heading */
+    color: white; /* Same text color as contact info */
+}
+
+
+.gallery-text h1{
+    font-weight: normal;
+    font-size: 95px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    color: white;
+}
+
+form {
+    padding: 60px 200px 150px 200px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.popup {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #0056b3;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Century Gothic;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+@media  screen and (max-width: 1040px) {
+    .intro-text{
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    form {
+        padding: 40px 100px 100px 100px; /* Reduce padding for medium screens */
+    }
+
+    .contact-info {
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: 22px; /* Slightly smaller font for medium screens */
+    }
+
+    .label {
+        flex: 0 0 200px; /* Adjust label width */
+    }
+
+}
+
 @media screen and (max-width: 787px) {
     header {
         flex-direction: row;
@@ -309,18 +355,18 @@ footer {
 
     nav ul li .contact_us{
         box-shadow: 0px 15px 20px -15px black;
-    }
-    /* 0px 10px 40px -2px */
-
-    nav ul li .home {
         border-left: 3px solid black;
 
         font-weight: normal;
+    }
+    form {
+        padding: 30px 50px 50px 50px; /* Further reduce padding for tablets */
     }
 
     .menu-toggle:checked + label + nav ul {
         display: flex; /* Display the menu */
     }
+
 
     .hamburger {
         display: block;
@@ -333,10 +379,6 @@ footer {
         cursor: pointer;
     }
 
-    #carouselExampleIndicators{
-        display: block;
-    }
-
     .menu-toggle {
         display: none;
     }
@@ -346,82 +388,23 @@ footer {
         width: 100%;
     }
 
-    .intro-text {
-        font-size: 1rem; /* Smaller font size for mobile screens */
-        padding-bottom: 10px;
+    .intro-text{
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: 20px;
     }
 
     .intro-text p{
-        text-align: justify;
+        margin: 0px;
     }
-
-    .lecucimg img {
-        width: 70%; /* Scale down image for mobile */
-        height: auto;
+    .placeholder-gallery {
+        padding-top: 80px;
+        padding-bottom: 30px;
     }
-
-    .placeholder-lecucci {
-        padding-top: 50px; /* Adjust padding for smaller screens */
-        margin-top: 70px;
-        padding-bottom: 2rem;
+    .gallery-text h1{
+        font-size: 75px;
+        margin-bottom: 30px;
     }
-    .content-section {
-        flex-direction: column; /* Stack image and text vertically */
-        align-items: center;
-        padding-left: 60px;
-        padding-right: 60px;
-        padding-bottom: 60px;
-        gap: 0px;
-    }
-    .carousel-inner {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-
-    .carousel-control-next{
-        right: 50px;
-    }
-    .carousel-control-prev{
-        left: 50px;
-    }
-
-
-    .content-left {
-        max-width: 100%; /* Allow image to take full width */
-        margin-bottom: 20px; /* Add spacing below image */
-    }
-
-
-    .content-right {
-        max-width: 100%; /* Allow text to take full width */
-    }
-
-    .content-right p {
-        font-size: 1rem; /* Adjust font size for mobile */
-        text-align: justify;
-        text-justify: inter-word;
-    }
-
-    .container {
-        display: none;
-    }
-
-/* Carousel Container */
-
-    .lecucimg {
-        padding-bottom: 20px;
-    }
-
-    .placeholder-lecucci{
-        padding-bottom: 0px;
-    }
-
-    .image-box {
-        width: 100%; /* Each image will take 80% of the container width on smaller screens */
-        margin-bottom: 20px; /* Add space between stacked images */
-
-    }
-
     .footer-links {
         text-align: center;
         flex: 1; /* Take up space */
@@ -432,7 +415,24 @@ footer {
         padding-right: 20px;
         padding-bottom: 20px;
     }
+    .contact-info {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 18px; /* Smaller font for small screens */
+    }
 
+    .info-row {
+        flex-wrap: nowrap; /* Ensure labels and values stay in the same row */
+        gap: 10px; /* Add space between label and value */
+    }
+
+    .label {
+        flex: 0 0 160px; /* Adjust label width for smaller screens */
+    }
+
+    .value {
+        flex: 1; /* Value remains beside the label */
+    }
 
     .footer-contact {
         width: 100%;
@@ -445,6 +445,9 @@ footer {
         text-align: center;
         line-height: 20px;
     }
+    .contact-heading {
+        font-size: 16px; /* Smaller heading font for small screens */
+    }
 
     .footer-social {
         width: 100%;
@@ -456,26 +459,32 @@ footer {
         width: auto;
         text-align: center;
     }
-
 }
 
-@media  screen and (max-width: 560px) {
-    .placeholder-lecucci{
-        padding-top: 30px;
-        background-size: cover;                /* Scale the image to cover the entire element */
-        background-position: center;           /* Center the image */
-        background-repeat: no-repeat;
-        width: 100%; /* Full width of the container */
-        height: auto; /* Full height of the viewport */
-    }
-
-
-    .intro-text{
+@media screen and (max-width: 583px) {
+    .footer-links {
+        text-align: center;
+        flex: 1; /* Take up space */
+        color: white;
         font-size: 13px;
-        line-height: 15px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    .intro-text{
+        padding-left: 70px;
+        padding-right: 70px;
+        font-size: 20px;
     }
 
-
+    .intro-text p{
+        text-align: justify;
+    }
+    .gallery-text h1{
+        font-size: 55px;
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 469px) {
@@ -490,36 +499,27 @@ footer {
         padding-bottom: 20px;
     }
 
-    .content-left{
-        margin: 0px;
+    .contact-heading {
+        font-size: 14px; /* Smaller heading font for small screens */
     }
-
-    .content-left{
-        padding-bottom: 20px;
-    }
-
-    .content-section{
-        padding-left: 40px;
+    form {
+        padding-left: 20px;
+        padding-top: 20px;
         padding-right: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 30px;
     }
 
-    .carousel-inner {
-        padding-left: 40px;
-        padding-right: 40px;
+
+    .contact-info {
+        font-size: 13px; /* Smaller font for extra small screens */
     }
 
-    .carousel-control-next{
-        right: 26px;
-    }
-    .carousel-control-prev{
-        left: 26px;
-    }
-
-    .lecucimg{
-        padding-bottom: 10px;
+    .label {
+        flex: 0 0 125px; /* Reduce label width further for very small screens */
     }
 }
+
+
 @media screen and (max-width: 400px) {
     .footer-links {
         text-align: center;
@@ -531,10 +531,19 @@ footer {
         padding-right: 20px;
         padding-bottom: 20px;
     }
+    .gallery-text h1{
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    .intro-text{
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 16px;
+    }
 }
 
 
-/* Desktop View: for screens wider than 787px */
 @media screen and (min-width: 787px) {
     header {
         flex-direction: row;
@@ -553,15 +562,7 @@ footer {
         display: none;
     }
 
-    .intro-text {
-        font-size: 1.5rem; /* Font size for larger screens */
-    }
-
 }
 
-/* Additional Tweaks for Larger Screens */
-@media screen and (min-width: 1024px) {
-    .intro-text {
-        font-size: 1.5rem; /* Font size for extra large screens */
-    }
-}
+
+

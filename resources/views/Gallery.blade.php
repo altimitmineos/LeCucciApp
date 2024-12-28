@@ -23,7 +23,7 @@
                 <li><a href="{{ route('about_us') }}" class="about_us">About Us</a></li>
                 <li><a href="{{ route('gallery') }}" class="gallery">Gallery</a></li>
                 <li><a href="{{ route('OurServices') }}" class="our_service">Our Service</a></li>
-                <li><a href="#" class="contact_us">Contact Us</a></li>
+                <li><a href="{{ route('ContactUs')  }}" class="contact_us">Contact Us</a></li>
             </ul>
         </nav>
     </header>

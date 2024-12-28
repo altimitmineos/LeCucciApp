@@ -15,20 +15,20 @@ class ContactSeeder extends Seeder
     {
         $contacts = [
             [
-                'Full Name' => 'Axel Baskoro',
-                'Phone Number'=> '08558784667',
-                'Address' => 'Cipete Raya',
-                'Email' => 'Axel_Baskoro@gmail.com',
-                'Subject' => 'Bau',
-                'Message' => 'Gatau kenapa bau cuciannya'
+                'full_name' => 'Axel Baskoro',
+                'phone_number'=> '08558784667',
+                'address' => 'Cipete Raya',
+                'email' => 'Axel_Baskoro@gmail.com',
+                'subject' => 'Bau',
+                'message' => 'Gatau kenapa bau cuciannya'
             ],
             [
-                'Full Name' => 'Alhamdi',
-                'Phone Number'=> '0855878466723',
-                'Address' => 'Sebelah Carino',
-                'Email' => 'hamdi1445@gmail.com',
-                'Subject' => 'Wangi',
-                'Message' => 'Gatau kenapa baunya wangi'
+                'full_name' => 'Alhamdi',
+                'phone_number'=> '0855878466723',
+                'address' => 'Sebelah Carino',
+                'email' => 'hamdi1445@gmail.com',
+                'subject' => 'Wangi',
+                'message' => 'Gatau kenapa baunya wangi'
             ],
         ];
         DB::table('contacts') -> insert($contacts);

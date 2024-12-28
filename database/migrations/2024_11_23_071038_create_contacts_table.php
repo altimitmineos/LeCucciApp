@@ -13,14 +13,15 @@ return new class extends Migration
     {
         Schema::create('contacts', function (Blueprint $table) {
             $table->id();
-            $table->string('Full Name', 100);
-            $table->string('Phone Number', 100);
-            $table->string('Address', 100);
-            $table->string('Email', 100);
-            $table->string('Subject', 100);
-            $table->text('Message', 100);
+            $table->string('full_name', 100); // Changed 'Full Name' -> 'full_name'
+            $table->string('phone_number', 100); // Changed 'Phone Number' -> 'phone_number'
+            $table->string('address', 100); // Kept 'address'
+            $table->string('email', 100); // Kept 'email'
+            $table->string('subject', 100); // Kept 'subject'
+            $table->text('message'); // Changed 'Message' to lowercase and removed length (text doesn't need length)
             $table->timestamps();
         });
+
     }
 
     /**
